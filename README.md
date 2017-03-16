@@ -1,6 +1,10 @@
 # myuw-boilerplate
 Boilerplate sandbox using Jekyll.
 
+## Install Jekyll (if you haven't already)
+
+    $ gem install jekyll bundler
+    
 ## Clone this repo
 
     $ git clone https://github.com/charlon/myuw-boilerplate.git
