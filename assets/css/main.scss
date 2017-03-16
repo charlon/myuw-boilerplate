@@ -6,7 +6,8 @@ $uw-purple: #4b2e83;
 
 .myuw-search {
     background-color: $uw-purple;
-    line-height: 30px;
+    line-height: 35px;
+    color: #ccc;
 
     a { color: #fff; }
 }
@@ -31,4 +32,16 @@ $uw-purple: #4b2e83;
         li { margin-right: 20px; line-height: 25px; }
     }
 
+}
+
+.myuw-content {
+    margin-bottom: 60px;
+}
+.myuw-quicklinks {
+    position: fixed;
+    bottom: 0;
+    background: #eee;
+    padding: 20px;
+    left:0;
+    right: 0;
 }
