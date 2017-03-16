@@ -15,24 +15,20 @@ $uw-purple: #4b2e83;
 
     $nav-height: 60px;
 
-    height: $nav-height;
-    line-height: $nav-height;
-    overflow: hidden;
-
-    background-image: url("/assets/img/uw-logo.jpg");
-    background-repeat: no-repeat;
-    background-position: 99%;
-    background-size: contain;
-    border-bottom: 2px solid #eee;
-
     .myuw-profile {
-        float: left;
-        width: 300px;
 
+        background-image: url("/assets/img/uw-logo.jpg");
+        background-repeat: no-repeat;
+        background-position: 99%;
+        background-size: contain;
+
+        height: $nav-height;
+        line-height: $nav-height;
+        border-bottom: 2px solid #eee;
         .fa-circle { color: red; }
     }
-    .myuw-menu { float: left; margin: 0; padding: 0;
-        li { display: inline-block; line-height: $nav-height; margin-right: 20px; }
+    .myuw-menu { margin: 0; padding: 0; background: #f3f3f3;
+        li { margin-right: 20px; line-height: 25px; }
     }
 
 }
