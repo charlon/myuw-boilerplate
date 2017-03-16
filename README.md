@@ -1,7 +1,7 @@
 # myuw-boilerplate
 Boilerplate sandbox using Jekyll.
 
-## Install Jekyll (if you haven't already)
+## Install Jekyll on OS X (if you haven't already)
 
     $ gem install jekyll bundler
     
