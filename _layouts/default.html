@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% if page.title %}{{ page.title | escape }} : {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="myuw-search">
+            <a href="/">MyUW</a> | search
+        </div>
+
+        <div class="myuw-navigation">
+
+            <div>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                </span>
+
+                <a href="/profile/">javerage</a>
+            </div>
+            <ul>
+                <li><a href="/teaching/">Teaching</a></li>
+                <li><a href="/academics/">Academics</a></li>
+                <li>Husky Experience</li>
+                <li>Events/Academic Calendar</li>
+            </ul>
+        </div>
+
+        <div class="myuw-content">
+            {{ content }}
+        </div>
+
+    </body>
+</html>
