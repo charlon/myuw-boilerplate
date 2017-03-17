@@ -26,17 +26,20 @@ $desktop-width: 992px;
 .myuw-search {
     background-color: $uw-purple;
     line-height: 35px;
+    height: 35px;
     color: #ccc;
     padding: 0 15px;
+    clear: left;
 
-    a { color: #fff; }
+    a { color: #fff; display: inline-block; float: left; }
+    .myuw-search-links { display: inline-block; float: right; }
 }
 
 .myuw-navigation { background: #fff;
 
     @include desktop { position: relative; };
 
-    .myuw-profile {
+    .myuw-logo {
 
         padding: 0 15px;
 
@@ -64,9 +67,10 @@ $desktop-width: 992px;
 
 .myuw-content {
     background: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 150px;
     padding: 15px;
 }
+
 .myuw-quicklinks {
     position: fixed;
     bottom: 0;
