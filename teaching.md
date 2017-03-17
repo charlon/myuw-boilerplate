@@ -4,4 +4,4 @@ title: Teaching
 permalink: /teaching/
 ---
 
-Aenean rutrum justo eros, sit amet consectetur mauris rhoncus a. Sed dapibus metus vel tortor vestibulum pharetra. Sed consectetur augue ut nulla elementum eleifend. Donec iaculis urna ipsum, ut dignissim libero interdum non. Integer eget gravida odio. Curabitur enim purus, vulputate id massa vitae, sollicitudin imperdiet est. Donec vel lacinia mi. Nam molestie ut lectus vestibulum luctus. Quisque venenatis odio ut purus sodales, sit amet dictum felis elementum.
+Nunc nunc dui, scelerisque a iaculis non, convallis at augue. Nulla porta quis diam vitae laoreet. Donec mollis dolor a purus auctor placerat. Mauris non eleifend erat. Vestibulum cursus risus maximus tempor efficitur. Nulla sed elit dapibus massa consectetur ullamcorper. Integer ac blandit eros. Quisque sit amet mauris blandit, finibus lectus eleifend, pulvinar neque. Quisque eu metus nisi.
