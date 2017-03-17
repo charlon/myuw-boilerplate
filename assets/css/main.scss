@@ -4,6 +4,24 @@
 /*** variables ***/
 $uw-purple: #4b2e83;
 
+/*** mixins ***/
+
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+
 .myuw-search {
     background-color: $uw-purple;
     line-height: 35px;
@@ -17,7 +35,7 @@ $uw-purple: #4b2e83;
 
     $nav-height: 60px;
 
-
+    @include desktop { position: relative; };
 
     .myuw-profile {
 
@@ -33,8 +51,14 @@ $uw-purple: #4b2e83;
         border-bottom: 2px solid #eee;
         .fa-circle { color: red; }
     }
-    .myuw-menu { margin: 0; padding: 0; background: #f3f3f3;
-        li { margin-right: 20px; line-height: 25px; }
+
+    .myuw-menu { margin: 0; padding: 0; background: #f3f3f3; list-style: none;
+
+        @include desktop { position: absolute; top: 0; left: 200px; right: 100px; background: transparent; };
+
+        li { margin-right: 20px; line-height: 25px;
+            @include desktop { display: inline-block; margin-right: 20px; line-height: $nav-height; };
+        }
     }
 
 }
