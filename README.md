@@ -4,7 +4,7 @@ Boilerplate sandbox using Jekyll.
 ## Install Jekyll on OS X (if you haven't already)
 
     $ gem install jekyll bundler
-    
+
 ## Clone this repo
 
     $ git clone https://github.com/charlon/myuw-boilerplate.git
@@ -17,6 +17,10 @@ And then execute:
 ## Jekyll Commands
 
     $ jekyll serve
+
+For static ip's
+
+    $ jekyll serve --host 0.0.0.0
 
 ## Contributing
 
