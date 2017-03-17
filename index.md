@@ -8,7 +8,7 @@ permalink: /
     notice info here
 </div>
 
-{{ page.title }}
+<h1>{{ page.title }}</h1>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper velit quis arcu pharetra vehicula. Donec id accumsan libero. Duis in tempus diam, id faucibus dui. Aenean molestie elit elementum, dictum massa nec, ornare lectus. Curabitur finibus, augue ac finibus pulvinar, ligula nisi commodo felis, fringilla pharetra dolor felis nec risus. Vivamus rutrum imperdiet lectus et feugiat. Vivamus dui lorem, malesuada eget elementum id, pulvinar nec turpis. Ut gravida, augue semper tincidunt efficitur, leo velit aliquet ligula, ac semper est tellus at elit. Etiam in massa tempor, blandit ipsum id, malesuada lorem. Proin arcu nulla, molestie semper eros dignissim, ornare porttitor mauris. Nam vel ligula at mi interdum eleifend. Aliquam eu vehicula purus.
 

@@ -4,6 +4,8 @@
 /*** variables ***/
 $uw-purple: #4b2e83;
 
+$nav-height: 60px;
+
 /*** mixins ***/
 
 $tablet-width: 768px;
@@ -30,9 +32,7 @@ $desktop-width: 992px;
     a { color: #fff; }
 }
 
-.myuw-navigation {
-
-    $nav-height: 60px;
+.myuw-navigation { background: #fff;
 
     @include desktop { position: relative; };
 
@@ -47,15 +47,15 @@ $desktop-width: 992px;
 
         height: $nav-height;
         line-height: $nav-height;
-        border-bottom: 2px solid #eee;
-        .fa-circle { color: red; }
+        border-bottom: 2px solid #d1d1d1;
+
     }
 
-    .myuw-menu { margin: 0; padding: 0; background: #f3f3f3; list-style: none;
+    .myuw-menu { margin: 0; padding: 0; background: #ECE9E2;  list-style: none;
 
         @include desktop { position: absolute; top: 0; left: 200px; right: 100px; background: transparent; };
 
-        li { margin-right: 20px; line-height: 25px;
+        li { line-height: 30px; padding: 0 15px;
             @include desktop { display: inline-block; margin-right: 20px; line-height: $nav-height; };
         }
     }
@@ -63,7 +63,9 @@ $desktop-width: 992px;
 }
 
 .myuw-content {
+    background: #fff;
     margin-bottom: 60px;
+    padding: 15px;
 }
 .myuw-quicklinks {
     position: fixed;
