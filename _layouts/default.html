@@ -26,7 +26,7 @@
     <body>
 
         <div class="myuw-search">
-            <a href="/profile/">{% if site.uw_netid %}{{ site.uw_netid }}{% else %}Profile{% endif%}</a>
+            <a href="/profile/">{% if site.uw_logged_in == site.data.uw_netid %}{{ site.data.uw_netid }}{% else %}Sign In{% endif%}</a>
             <div class="myuw-search-links">search | help</div>
         </div>
 

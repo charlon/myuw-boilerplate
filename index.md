@@ -7,7 +7,9 @@ permalink: /
 
 <h1>{{ page.title }}</h1>
 
-{% if site.uw_notices_on %}
+{% assign user = site.data.profiles.[site.uw_logged_in] %}
+
+{% if user.uw_notices %}
 <div class="" style="padding:10px; background-color: yellow; ">
     notice info here
 </div>
