@@ -27,7 +27,7 @@ github_username:  jekyll
 # uw netid settings
 uw_netid: javerage
 uw_affiliation: student
-uw_notices_on : false
+uw_notices_on : true
 
 # Build settings
 markdown: kramdown

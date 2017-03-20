@@ -16,7 +16,7 @@ courses:
 
 <h1>{% if site.uw_netid %}{{ site.uw_netid }}{% else %}My Profile{% endif%}</h1>
 
-{{ site.uw_affiliation == student }}
+{{ site.uw_affiliation }}
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean faucibus felis id nunc pharetra, eget condimentum lorem facilisis. Etiam porta et augue in molestie. Sed maximus augue tincidunt, viverra ipsum sed, varius nunc. Nulla tincidunt purus purus. Morbi in lacinia massa, quis porttitor magna. Cras vulputate lacus eget venenatis viverra. Morbi in fringilla felis.
 
