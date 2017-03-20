@@ -23,7 +23,17 @@ $desktop-width: 992px;
     }
 }
 
-body { }
+/*** helpers ***/
+
+.visually-hidden  {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+/*** myuw ***/
 
 .myuw-search {
     background-color: $uw-purple;
@@ -37,7 +47,7 @@ body { }
     .myuw-search-links { display: inline-block; float: right; }
 }
 
-.myuw-navigation { background: #ECE9E2; 
+.myuw-navigation { background: #ECE9E2;
 
     @include desktop { position: relative; };
 
@@ -76,9 +86,9 @@ body { }
 
 .myuw-content {
 
-    margin: 15px 15px 150px 15px;
+    margin-bottom: 150px;
 
-    .myuw-card { background: #fff;padding: 15px; margin-bottom: 15px; }
+    .myuw-card { background: #fff; padding: 15px; border-bottom: solid 1px #ddd; }
 }
 
 .myuw-quicklinks {

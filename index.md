@@ -4,12 +4,12 @@ title: Home
 permalink: /
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="visually-hidden">{{ page.title }}</h1>
 
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
 {% if user.uw_notices %}
-<div class="myuw-card" style="padding:10px; background-color: yellow; ">
+<div class="myuw-card" style="background-color: yellow; ">
     notice info here
     <ul>
         <li>asldkjf</li>
