@@ -2,28 +2,28 @@
 layout: default
 title: My Profile
 permalink: /profile/
-netid: javerage
-fruit:
-  - name: apple
+courses:
+  - name: CHEM 101
     cost: $1
     color: red
-  - name: banana
+  - name: CSE 142
     cost: $2
     color: yellow
-  - name: orange
+  - name: MATH 303
     cost: $1.50
     color: orange
 ---
 
-<h1>{% if page.netid %}{{ page.netid }}{% else %}My Profile{% endif%}</h1>
+<h1>{% if site.uw_netid %}{{ site.uw_netid }}{% else %}My Profile{% endif%}</h1>
+
+{{ site.uw_affiliation == student }}
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean faucibus felis id nunc pharetra, eget condimentum lorem facilisis. Etiam porta et augue in molestie. Sed maximus augue tincidunt, viverra ipsum sed, varius nunc. Nulla tincidunt purus purus. Morbi in lacinia massa, quis porttitor magna. Cras vulputate lacus eget venenatis viverra. Morbi in fringilla felis.
 
-
-{{ page.netid }}
+course schedule
 
 <ul>
-    {% for item in page.fruit %}
+    {% for item in page.courses %}
     <li>{{ item.name }}, cost: {{ item.cost }}, color: {{ item.color }}</li>
     {% endfor %}
 </ul>

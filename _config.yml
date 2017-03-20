@@ -24,6 +24,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# uw netid settings
+uw_netid: javerage
+uw_affiliation: student
+uw_notices_on : false
+
 # Build settings
 markdown: kramdown
 gems:
