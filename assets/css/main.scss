@@ -56,11 +56,15 @@ body { background: #ECE9E2; }
         height: $nav-height;
         line-height: $nav-height;
 
+        button {
+            @include desktop { display: none; };
+        }
+
     }
 
-    .myuw-menu { margin: 0; padding: 0;   list-style: none;
+    .myuw-menu { margin: 0; padding: 0;   list-style: none; display: none;
 
-        @include desktop { position: absolute; top: 0; left: 200px; right: 100px; background: transparent; };
+        @include desktop { position: absolute; top: 0; left: 200px; right: 100px; background: transparent; display: block; };
 
         li { line-height: 30px; padding: 0 15px;
             @include desktop { display: inline-block; margin-right: 20px; line-height: $nav-height; };
