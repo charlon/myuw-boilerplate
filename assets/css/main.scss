@@ -75,9 +75,10 @@ body { background: #ECE9E2; }
 }
 
 .myuw-content {
-    background: #fff;
-    padding: 15px;
+
     margin: 15px 15px 150px 15px;
+
+    .myuw-card { background: #fff;padding: 15px; margin-bottom: 15px; }
 }
 
 .myuw-quicklinks {

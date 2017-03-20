@@ -25,8 +25,10 @@
     </head>
     <body>
 
+        {% assign user = site.data.profiles.[site.uw_logged_in] %}
+
         <div class="myuw-search">
-            <a href="/profile/">{% if site.uw_logged_in == site.data.uw_netid %}{{ site.data.uw_netid }}{% else %}Sign In{% endif%}</a>
+            <a href="/profile/">{% if site.uw_logged_in == 'javerage' %}{{ user.uw_netid }}{% else %}Sign In{% endif%}</a>
             <div class="myuw-search-links">search | help</div>
         </div>
 

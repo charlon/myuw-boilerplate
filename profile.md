@@ -2,22 +2,16 @@
 layout: default
 title: My Profile
 permalink: /profile/
-
 ---
 
-<h1>{% if site.uw_netid %}{{ site.uw_netid }}{% else %}My Profile{% endif%}</h1>
+<div class="myuw-card">
 
-{% assign user = site.data.profiles.[site.uw_logged_in] %}
+    <h1>{% if site.uw_netid %}{{ site.uw_netid }}{% else %}My Profile{% endif%}</h1>
 
-{{ user.uw_netid }}
+    {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
-{{ user.uw_affiliation }}
+    <p>{{ user.uw_netid }}</p>
 
-{% if user.uw_courses %}
-course schedule
-<ul>
-    {% for item in user.uw_courses %}
-    <li>{{ item.name }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
+    <p>{{ user.uw_affiliation }}</p>
+
+</div>
