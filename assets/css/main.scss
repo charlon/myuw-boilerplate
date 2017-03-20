@@ -23,7 +23,7 @@ $desktop-width: 992px;
     }
 }
 
-body { background: #ECE9E2; }
+body { }
 
 .myuw-search {
     background-color: $uw-purple;
@@ -37,7 +37,7 @@ body { background: #ECE9E2; }
     .myuw-search-links { display: inline-block; float: right; }
 }
 
-.myuw-navigation {
+.myuw-navigation { background: #ECE9E2; 
 
     @include desktop { position: relative; };
 
@@ -84,7 +84,7 @@ body { background: #ECE9E2; }
 .myuw-quicklinks {
     position: fixed;
     bottom: 0;
-    background: #fff;
+    background: #ECE9E2;
     border-top: 2px solid #d1d1d1;
     padding: 20px;
     left:0;
