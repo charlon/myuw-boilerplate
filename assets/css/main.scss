@@ -56,7 +56,7 @@ body { background: #ECE9E2; }
         height: $nav-height;
         line-height: $nav-height;
 
-        a { font-size: 28px; font-weight: bold; text-decoration: none; }
+        a { font-size: 28px; font-weight: bold; }
         button { text-decoration: underline; color: blue;
             @include desktop { display: none; };
         }
