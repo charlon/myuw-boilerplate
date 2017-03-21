@@ -69,8 +69,9 @@
 
                 <ul id="menu_container" class="myuw-menu">
 
-                    {% if user.uw_affiliation == 'student' %}
                     <li><a href="/">Home</a></li>
+
+                    {% if user.uw_affiliation == 'student' %}
                     <li><a href="/academics/">Academics</a></li>
                     <li><a href="/huskyexp/">Husky Experience</a></li>
                     <li><a href="/calendar/">Calendar</a></li>
