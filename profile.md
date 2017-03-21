@@ -8,7 +8,7 @@ permalink: /profile/
 
     {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
-    <h1>{{ user.uw_netid }}</h1>
+    <h2>{{ user.uw_netid }}</h2>
     <p>{{ user.uw_affiliation }}</p>
 
 </div>

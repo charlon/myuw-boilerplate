@@ -17,8 +17,8 @@
         <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
         <style>
-		.hidden {
-			display: none;
+		.visible {
+			display: block !important;
 		}
 	      </style>
 
@@ -27,65 +27,86 @@
 
         {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
-        <div class="myuw-search" id="search_container">
-            <form action="/results/">
-                <input type="text" name="" value="" style="border:solid 1px purple;">
-                <input type="submit">
-            </form>
-        </div>
 
-        <div class="myuw-purple-bar">
-            <a href="/profile/">{{ user.uw_netid }}</a>
-            <div class="myuw-search-links"><button id="search_toggle">search</button> | help</div>
-        </div>
 
-        <div class="myuw-navigation">
-
-            <div class="myuw-logo">
-                <button id="menu_toggle"></i>
-
-                    <span class="fa-stack fa-md">
-                        <i class="fa fa-square-o fa-stack-2x"></i>
-                        <i class="fa fa-bars fa-stack-1x"></i>
-                    </span>
-                    {{ page.title }}</button>
+            <div class="myuw-search" id="search_container">
+                <div class="myuw-wrapper">
+                    <form action="/results/">
+                        <input type="text" name="" value="" style="border:solid 1px purple;">
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
 
-            <ul id="menu_container" class="myuw-menu">
+            <div class="myuw-purple-bar">
+                <div class="myuw-wrapper">
+                    <span class="fa-stack fa-sm">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="/profile/">{{ user.uw_netid }}</a>
+                    <div class="myuw-search-links">
+                        <button id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
 
-                {% if user.uw_affiliation == 'student' %}
-                <li><a href="/">Home</a></li>
-                <li><a href="/academics/">Academics</a></li>
-                <li><a href="/huskyexp/">Husky Experience</a></li>
-                <li><a href="/calendar/">Calendar</a></li>
-                <li><a href="/accounts/">Accounts</a></li>
-                {% endif %}
+            <div class="myuw-navigation">
 
-                {% if user.uw_affiliation == 'faculty' %}
-                <li><a href="/teaching/">Teaching</a></li>
-                <li><a href="/calendar/">Calendar</a></li>
-                <li><a href="/accounts/">Accounts</a></li>
-                {% endif %}
+                <div class="myuw-wrapper">
+                <div class="myuw-logo">
+                    <button id="menu_toggle"></i>
 
-                {% if user.uw_affiliation == 'staff' %}
-                <li><a href="/accounts/">Accounts</a></li>
-                {% endif %}
+                        <span class="fa-stack fa-md">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-bars fa-stack-1x"></i>
+                        </span>
+                            {% if page.permalink == '/results/' or page.permalink == '/profile/' %}MyUW{% else %}{{ page.title }}{% endif %}
+                    </button>
+                </div>
 
-            </ul>
+                <ul id="menu_container" class="myuw-menu">
 
-        </div>
+                    {% if user.uw_affiliation == 'student' %}
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/academics/">Academics</a></li>
+                    <li><a href="/huskyexp/">Husky Experience</a></li>
+                    <li><a href="/calendar/">Calendar</a></li>
+                    <li><a href="/accounts/">Accounts</a></li>
+                    {% endif %}
 
-        <div class="myuw-content">
-            {{ content }}
-        </div>
+                    {% if user.uw_affiliation == 'faculty' %}
+                    <li><a href="/teaching/">Teaching</a></li>
+                    <li><a href="/calendar/">Calendar</a></li>
+                    <li><a href="/accounts/">Accounts</a></li>
+                    {% endif %}
 
-        <div class="myuw-quicklinks">
-            <ul>
-                <li>quicklinks</li>
-                <li>quicklinks</li>
-                <li>quicklinks</li>
-            </ul>
-        </div>
+                    {% if user.uw_affiliation == 'staff' %}
+                    <li><a href="/accounts/">Accounts</a></li>
+                    {% endif %}
+
+                </ul>
+                </div>
+
+            </div>
+
+            <div class="myuw-content">
+                <div class="myuw-wrapper">
+                    <h1 class="visually-hidden">{{ page.title }}</h1>
+
+                    {{ content }}
+
+                    <div class="myuw-quicklinks">
+                        <h2>Quicklinks</h2>
+                        <ul>
+                            <li>quicklinks</li>
+                            <li>quicklinks</li>
+                            <li>quicklinks</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
 
     </body>
 </html>

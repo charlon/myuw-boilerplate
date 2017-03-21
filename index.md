@@ -4,26 +4,22 @@ title: MyUW
 permalink: /
 ---
 
-<h1 class="visually-hidden">{{ page.title }}</h1>
-
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
 {% if user.uw_notices %}
 <div class="myuw-card">
-    notice info here
+    <h2>Notices</h2>
     <ul>
         <li>asldkjf</li>
         <li>asldjflk</li>
         <li>oasdjf</li>
     </ul>
 </div>
-{% else %}
-OFF
 {% endif %}
 
 {% if user.uw_courses %}
 <div class="myuw-card">
-course schedule
+    <h2>Course Schedule</h2>
     <ul>
         {% for item in user.uw_courses %}
         <li>{{ item.name }}</li>
@@ -33,6 +29,7 @@ course schedule
 {% endif %}
 
 <div class="myuw-card">
+    <h2>Card Content</h2>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper velit quis arcu pharetra vehicula. Donec id accumsan libero. Duis in tempus diam, id faucibus dui. Aenean molestie elit elementum, dictum massa nec, ornare lectus. Curabitur finibus, augue ac finibus pulvinar, ligula nisi commodo felis, fringilla pharetra dolor felis nec risus. Vivamus rutrum imperdiet lectus et feugiat. Vivamus dui lorem, malesuada eget elementum id, pulvinar nec turpis. Ut gravida, augue semper tincidunt efficitur, leo velit aliquet ligula, ac semper est tellus at elit. Etiam in massa tempor, blandit ipsum id, malesuada lorem. Proin arcu nulla, molestie semper eros dignissim, ornare porttitor mauris. Nam vel ligula at mi interdum eleifend. Aliquam eu vehicula purus.
 
     Suspendisse potenti. Curabitur finibus, purus tincidunt tincidunt rhoncus, mauris risus vehicula felis, consectetur bibendum augue odio vel nisi. Nullam ultrices vitae erat sollicitudin hendrerit. Vivamus imperdiet tortor at sollicitudin tristique. Donec elementum vulputate efficitur. Nullam elementum nunc efficitur dictum tincidunt. Donec commodo eros vel sapien facilisis tempor. Suspendisse gravida velit eu augue scelerisque, sit amet lobortis nisl scelerisque.
