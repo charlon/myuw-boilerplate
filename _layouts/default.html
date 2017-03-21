@@ -27,7 +27,7 @@
 
         {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
-        <div class="myuw-search">
+        <div class="myuw-search" id="search_container">
             <form action="/results/">
                 <input type="text" name="" value="" style="border:solid 1px purple;">
                 <input type="submit">
@@ -42,22 +42,28 @@
         <div class="myuw-navigation">
 
             <div class="myuw-logo">
-                <a href="/">MyUW</a>
-                <button id="menu_toggle">menu</button>
+                <button id="menu_toggle"></i>
+
+                    <span class="fa-stack fa-md">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-bars fa-stack-1x"></i>
+                    </span>
+                    {{ page.title }}</button>
             </div>
 
             <ul id="menu_container" class="myuw-menu">
 
                 {% if user.uw_affiliation == 'student' %}
+                <li><a href="/">Home</a></li>
                 <li><a href="/academics/">Academics</a></li>
                 <li><a href="/huskyexp/">Husky Experience</a></li>
-                <li><a href="/calendar/">Events/Academic Calendar</a></li>
+                <li><a href="/calendar/">Calendar</a></li>
                 <li><a href="/accounts/">Accounts</a></li>
                 {% endif %}
 
                 {% if user.uw_affiliation == 'faculty' %}
                 <li><a href="/teaching/">Teaching</a></li>
-                <li><a href="/calendar/">Events/Academic Calendar</a></li>
+                <li><a href="/calendar/">Calendar</a></li>
                 <li><a href="/accounts/">Accounts</a></li>
                 {% endif %}
 

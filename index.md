@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: MyUW
 permalink: /
 ---
 
@@ -9,7 +9,7 @@ permalink: /
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
 {% if user.uw_notices %}
-<div class="myuw-card" style="background-color: yellow; ">
+<div class="myuw-card">
     notice info here
     <ul>
         <li>asldkjf</li>
@@ -22,9 +22,6 @@ OFF
 {% endif %}
 
 {% if user.uw_courses %}
-
-{{ user | jsonify }}
-
 <div class="myuw-card">
 course schedule
     <ul>

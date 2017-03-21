@@ -4,4 +4,8 @@ $(document).ready(function(){
 		$("#menu_container").toggle("hidden");
 	});
 
+    $("#search_toggle").click(function(){
+		$("#search_container").toggle("hidden");
+	});
+
 });
