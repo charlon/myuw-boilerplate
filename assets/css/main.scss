@@ -52,7 +52,6 @@ overflow:hidden;}
     background-color: $uw-purple;
     line-height: 40px;
     height: 40px;
-    color: #ccc;
     padding: 0 20px;
     clear: left;
     font-size: 14px;
@@ -61,8 +60,9 @@ overflow:hidden;}
 
     a { color: #fff; display: inline-block; text-decoration: none; }
 
-    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase;
-        button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; }
+    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff;
+        i { display: inline-block; width: 20px; text-align: center; }
+        button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; padding: 0; }
     }
 }
 
@@ -81,7 +81,7 @@ overflow:hidden;}
         padding: 0 15px;
         background-image: url("/assets/img/uw-logo.png");
         background-repeat: no-repeat;
-        background-position: 97% 99%;
+        background-position: 95% 99%;
         background-size: 60px;
 
         height: $nav-height;
