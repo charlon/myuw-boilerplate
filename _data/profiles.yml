@@ -1,16 +1,16 @@
 javerage:
-    uw_netid : javerage
-    uw_affiliation: student
-    uw_notices: true
-    uw_courses:
-        - name: CHEM 101
-        - name: CSE 142
-        - name: MATH 303
+  uw_netid : javerage
+  uw_affiliation: student
+  uw_notices: true
+  uw_courses:
+    - name: CHEM 101
+    - name: CSE 142
+    - name: MATH 303
 
 jinstructor:
-    uw_netid : jinstructor
-    uw_affiliation: faculty
+  uw_netid : jinstructor
+  uw_affiliation: faculty
 
 jstaff:
-    uw_netid : jstaff
-    uw_affiliation: staff
+  uw_netid : jstaff
+  uw_affiliation: staff
