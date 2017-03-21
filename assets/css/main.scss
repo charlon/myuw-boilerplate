@@ -56,11 +56,11 @@ overflow:hidden;}
     clear: left;
     font-size: 14px;
 
-    .fa-stack { font-size: 12px; color: lighten( $uw-purple, 15% ); margin-left: -5px; }
+    .fa-stack { font-size: 12px; color: lighten( $uw-purple, 15% ); margin-left: -2px; }
 
     a { color: #fff; display: inline-block; text-decoration: none; }
 
-    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff;
+    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff; margin-right: -3px;
         i { display: inline-block; width: 20px; text-align: center; }
         button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; padding: 0; }
     }
@@ -78,10 +78,10 @@ overflow:hidden;}
         box-shadow: 0 1px 3px rgba(34,25,25,.4);
         @include desktop { box-shadow: none; };
 
-        padding: 0 15px;
+        padding: 0 20px;
         background-image: url("/assets/img/uw-logo.png");
         background-repeat: no-repeat;
-        background-position: 95% 99%;
+        background-position: 94% 99%;
         background-size: 60px;
 
         height: $nav-height;
@@ -101,7 +101,7 @@ overflow:hidden;}
             background: none;
             border: none;
 
-            span { font-size: 15px; margin-top: -3px; }
+            .fa-stack { font-size: 15px; margin-top: -3px; color: #ccc; }
             @include desktop { display: none; };
         }
 
@@ -134,9 +134,8 @@ overflow:hidden;}
     //background: $uw-purple;
     //border-top: 3px solid lighten( $uw-purple, 15% );
     background: #fff;
-    padding: 20px;
 
-    @include desktop { position: absolute; width: 23%; top: 20px; right: 0; border: solid 1px #ddd; };
+    @include desktop { padding: 20px; position: absolute; width: 23%; top: 20px; right: 0; border: solid 1px #ddd; };
 
     ul {
         //margin: 0;
