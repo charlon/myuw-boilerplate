@@ -28,23 +28,43 @@
         {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
         <div class="myuw-search">
-            <a href="/profile/">{% if site.uw_logged_in == 'javerage' %}{{ user.uw_netid }}{% else %}Sign In{% endif%}</a>
-            <div class="myuw-search-links">search | help</div>
+            <form action="/results/">
+                <input type="text" name="" value="" style="border:solid 1px purple;">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="myuw-purple-bar">
+            <a href="/profile/">{{ user.uw_netid }}</a>
+            <div class="myuw-search-links"><button id="search_toggle">search</button> | help</div>
         </div>
 
         <div class="myuw-navigation">
 
             <div class="myuw-logo">
                 <a href="/">MyUW</a>
-                <button id="menu_toggle">Menu</button>
+                <button id="menu_toggle">menu</button>
             </div>
 
             <ul id="menu_container" class="myuw-menu">
-                <li><a href="/teaching/">Teaching</a></li>
+
+                {% if user.uw_affiliation == 'student' %}
                 <li><a href="/academics/">Academics</a></li>
                 <li><a href="/huskyexp/">Husky Experience</a></li>
                 <li><a href="/calendar/">Events/Academic Calendar</a></li>
                 <li><a href="/accounts/">Accounts</a></li>
+                {% endif %}
+
+                {% if user.uw_affiliation == 'faculty' %}
+                <li><a href="/teaching/">Teaching</a></li>
+                <li><a href="/calendar/">Events/Academic Calendar</a></li>
+                <li><a href="/accounts/">Accounts</a></li>
+                {% endif %}
+
+                {% if user.uw_affiliation == 'staff' %}
+                <li><a href="/accounts/">Accounts</a></li>
+                {% endif %}
+
             </ul>
 
         </div>

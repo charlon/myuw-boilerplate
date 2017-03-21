@@ -22,6 +22,9 @@ OFF
 {% endif %}
 
 {% if user.uw_courses %}
+
+{{ user | jsonify }}
+
 <div class="myuw-card">
 course schedule
     <ul>
