@@ -3,8 +3,8 @@
 
 /*** variables ***/
 $uw-purple: #4b2e83;
-
 $nav-height: 65px;
+$bar-height: 40px;
 
 /*** mixins ***/
 
@@ -26,14 +26,21 @@ $desktop-width: 992px;
 /*** helpers ***/
 
 .visually-hidden  {
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;}
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 
-
+.slide-down {
+    max-height: 1000px !important;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
 
 /*** myuw ***/
 
@@ -42,47 +49,50 @@ overflow:hidden;}
 }
 
 .myuw-search {
-    display: none;
     background-color: #eee;
     text-align: center;
-    padding: 5px;
+    max-height: 0;
+    overflow-y: hidden;
+
+    form { padding: 5px; }
 }
 
 .myuw-purple-bar {
     background-color: $uw-purple;
-    line-height: 40px;
-    height: 40px;
+    line-height: $bar-height;
+    height: $bar-height;
     padding: 0 20px;
     clear: left;
     font-size: 14px;
 
-    .fa-stack { font-size: 12px; color: lighten( $uw-purple, 15% ); margin-left: -2px; }
+    a { color: #fff; display: inline-block; text-decoration: none;
+        .fa-stack { font-size: 12px; color: lighten( $uw-purple, 15% ); }
+    }
 
-    a { color: #fff; display: inline-block; text-decoration: none; }
-
-    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff; margin-right: -3px;
-        i { display: inline-block; width: 20px; text-align: center; }
-        button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; padding: 0; }
+    .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff; margin-right: -3px; font-size: 16px;
+        a { display: inline-block; width: 30px; text-align: center; }
+        button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; padding: 0; width:30px; height: $bar-height; display: inline-block; }
     }
 }
 
 .myuw-navigation {
 
-    @include desktop { position: relative; box-shadow: 0 1px 3px rgba(34,25,25,.4); };
+    @include desktop { position: relative; box-shadow: 0 1px 3px rgba(34,25,25,.25); };
 
     .myuw-logo {
         position: relative;
         background: #fff;
         //border-bottom: 2px solid #d1d1d1;
 
-        box-shadow: 0 1px 3px rgba(34,25,25,.4);
+        box-shadow: 0 1px 3px rgba(34,25,25,.25);
         @include desktop { box-shadow: none; };
 
         padding: 0 20px;
         background-image: url("/assets/img/uw-logo.png");
         background-repeat: no-repeat;
-        background-position: 94% 99%;
         background-size: 60px;
+        background-position: 89% 102%;
+        @include desktop { background-position: 98% 102%; };
 
         height: $nav-height;
         line-height: $nav-height;
@@ -107,13 +117,16 @@ overflow:hidden;}
 
     }
 
-    .myuw-menu { margin: 0; padding: 20px 0; list-style: none; display: none; background: #ECE9E2;
+    .myuw-menu { padding: 0; margin: 0; list-style: none; background: #ECE9E2; max-height: 0; overflow-y: hidden;
 
         @include desktop { padding: 0; position: absolute; top: 0; left: 0; right: 100px; background: transparent; display: block; };
 
-        li { line-height: 30px; padding: 0 20px; font-weight: bold; text-transform: uppercase;
+        li { line-height: 30px; padding: 0; margin-left: 20px; font-weight: bold; text-transform: uppercase;
             a { text-decoration: none; color: #555; }
             @include desktop { display: inline-block; line-height: $nav-height; padding-left: 0; };
+
+            &:first-child { margin-top: 20px; }
+            &:last-child { margin-bottom: 20px; }
         }
     }
 
@@ -131,15 +144,8 @@ overflow:hidden;}
 
 .myuw-quicklinks {
 
-    //background: $uw-purple;
-    //border-top: 3px solid lighten( $uw-purple, 15% );
     background: #fff;
 
     @include desktop { padding: 20px; position: absolute; width: 23%; top: 20px; right: 0; border: solid 1px #ddd; };
 
-    ul {
-        //margin: 0;
-        //color: #fff;
-        //list-style: none; margin: 0; padding: 0;
-    }
 }
