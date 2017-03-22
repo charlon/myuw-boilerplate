@@ -149,8 +149,10 @@ body { background: #eee; }
 
             a { text-decoration: none; color: #555;
 
+                @include desktop { color: $uw-purple; }
+
                 .fa { display: none;
-                    @include desktop { color:#aaa; display: inline-block; }
+                    @include desktop { color:#ccc; display: inline-block; width: 20px; }
                 }
             }
 
