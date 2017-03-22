@@ -65,23 +65,23 @@
 
                 <ul id="menu_container" class="myuw-menu">
 
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
 
                     {% if user.uw_affiliation == 'student' %}
-                    <li><a href="/academics/">Academics</a></li>
-                    <li><a href="/huskyexp/">Husky Experience</a></li>
-                    <li><a href="/calendar/">Calendar</a></li>
-                    <li><a href="/accounts/">Accounts</a></li>
+                    <li><a href="/academics/"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Academics</a></li>
+                    <li><a href="/huskyexp/"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Husky Experience</a></li>
+                    <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
                     {% endif %}
 
                     {% if user.uw_affiliation == 'faculty' %}
-                    <li><a href="/teaching/">Teaching</a></li>
-                    <li><a href="/calendar/">Calendar</a></li>
-                    <li><a href="/accounts/">Accounts</a></li>
+                    <li><a href="/teaching/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Teaching</a></li>
+                    <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
                     {% endif %}
 
                     {% if user.uw_affiliation == 'staff' %}
-                    <li><a href="/accounts/">Accounts</a></li>
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
                     {% endif %}
 
                 </ul>
