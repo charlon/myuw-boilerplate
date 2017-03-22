@@ -178,3 +178,5 @@ body { background: #eee; }
     @include desktop { position: absolute; width: 23%; top: 0; right: 0;  };
 
 }
+
+.myuw-footer { padding: 0 20px; line-height: $bar-height; font-size: 14px; color: #999; }
