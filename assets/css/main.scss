@@ -71,7 +71,9 @@ $desktop-width: 992px;
 
     .myuw-search-links { display: inline-block; float: right; text-transform: uppercase; color: #fff; margin-right: -3px; font-size: 16px;
         a { display: inline-block; width: 30px; text-align: center; }
-        button { color: #fff; text-decoration: none;  text-transform: uppercase; background: none; border: none; padding: 0; width:30px; height: $bar-height; display: inline-block; }
+        button { color: #fff; text-decoration: none;  text-transform: uppercase; padding: 0; width:30px; height: $bar-height; display: inline-block;
+            @include desktop { background: none; border: none; }
+        }
     }
 }
 
@@ -97,8 +99,6 @@ $desktop-width: 992px;
         height: $nav-height;
         line-height: $nav-height;
 
-        //a { font-size: 28px; font-weight: bold; }
-
         button {
             text-decoration: none;
             color: #222;
@@ -108,11 +108,11 @@ $desktop-width: 992px;
             line-height: $nav-height;
             padding: 0;
             margin: 0;
-            background: none;
-            border: none;
+
+            @include desktop { background: none; border: none; display: none; }
 
             .fa-stack { font-size: 15px; margin-top: -3px; color: #ccc; }
-            @include desktop { display: none; };
+
         }
 
     }
