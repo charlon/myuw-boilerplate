@@ -63,7 +63,7 @@ body { background: #eee; }
 }
 
 .myuw-purple-bar {
-    background-color: #ddd;
+    background-color: lighten( $uw-purple, 5% );
     line-height: $bar-height;
     height: $bar-height;
     padding: 0 20px;
@@ -104,7 +104,7 @@ body { background: #eee; }
 
         button {
             text-decoration: none;
-            color: #222;
+            color: #fff;
             font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
