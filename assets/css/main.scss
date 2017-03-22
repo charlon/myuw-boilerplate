@@ -63,7 +63,7 @@ body { background: #eee; }
 }
 
 .myuw-purple-bar {
-    background-color: $uw-purple;
+    background-color: #ddd;
     line-height: $bar-height;
     height: $bar-height;
     padding: 0 20px;
@@ -82,14 +82,12 @@ body { background: #eee; }
     }
 }
 
-.myuw-navigation { background: #fff;
+.myuw-navigation { background: $uw-purple;
 
     @include desktop { position: relative; box-shadow: 0 1px 3px rgba(34,25,25,.25); };
 
     .myuw-logo {
         position: relative;
-        background: #fff;
-        //border-bottom: 2px solid #d1d1d1;
 
         box-shadow: 0 1px 3px rgba(34,25,25,.25);
         @include desktop { box-shadow: none; };
@@ -118,7 +116,7 @@ body { background: #eee; }
             background: none;
             border: none;
             margin-left: -2px;
-            
+
             @include desktop { display: none; }
 
             .fa-stack { font-size: 15px; margin-top: -3px; color: #ccc; }
@@ -150,7 +148,7 @@ body { background: #eee; }
 
             a { text-decoration: none; color: #555;
 
-                @include desktop { color: $uw-purple; }
+                @include desktop { color: #fff; }
 
                 .fa { display: none;
                     @include desktop { color:#ccc; display: inline-block; width: 20px; }
