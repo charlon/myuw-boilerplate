@@ -117,7 +117,8 @@ body { background: #eee; }
             margin: 0;
             background: none;
             border: none;
-
+            margin-left: -2px;
+            
             @include desktop { display: none; }
 
             .fa-stack { font-size: 15px; margin-top: -3px; color: #ccc; }
