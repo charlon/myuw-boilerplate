@@ -89,15 +89,15 @@ body { background: #eee; }
     .myuw-logo {
         position: relative;
 
-        box-shadow: 0 1px 3px rgba(34,25,25,.25);
+        //box-shadow: 0 1px 3px rgba(34,25,25,.25);
         @include desktop { box-shadow: none; };
 
         padding: 0 20px;
         background-image: url("/assets/img/uw-logo-white.png");
         background-repeat: no-repeat;
         background-size: 60px;
-        background-position: 89% 102%;
-        @include desktop { background-position: 98% 102%; };
+        background-position: 89% 100%;
+        @include desktop { background-position: 98% 100%; };
 
         height: $nav-height;
         line-height: $nav-height;
@@ -105,7 +105,7 @@ body { background: #eee; }
         button {
             text-decoration: none;
             color: #fff;
-            font-size: 20px;
+            font-size: 18px;
             text-transform: uppercase;
             font-weight: bold;
             line-height: $nav-height;
