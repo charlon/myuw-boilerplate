@@ -63,7 +63,14 @@ body { background: #eee; }
 }
 
 .myuw-purple-bar {
-    background-color: lighten( $uw-purple, 5% );
+    background: #444;
+
+    background-image: url("/assets/img/uw-logo-white.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 4% center;
+    @include desktop { background-position: 11% center; };
+
     line-height: $bar-height;
     height: $bar-height;
     padding: 0 20px;
@@ -93,7 +100,7 @@ body { background: #eee; }
         @include desktop { box-shadow: none; };
 
         padding: 0 20px;
-        background-image: url("/assets/img/uw-logo-white.png");
+        //background-image: url("/assets/img/uw-logo-white.png");
         background-repeat: no-repeat;
         background-size: 60px;
         background-position: 89% 100%;
@@ -103,11 +110,12 @@ body { background: #eee; }
         line-height: $nav-height;
 
         button {
+            font-famaily: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
             text-decoration: none;
             color: #fff;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-weight: bold;
+            font-size: 23px;
+            //text-transform: uppercase;
+            font-weight: 400;
             line-height: $nav-height;
             height: $nav-height;
             display: inline-block;
