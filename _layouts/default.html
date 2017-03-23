@@ -33,7 +33,7 @@
         <div class="myuw-purple-bar">
             <div class="myuw-wrapper">
 
-                <a href="/" style="display:inline-block;width:40px;color:transparent;">UW.edu</a>
+                <a href="/" class="myuw-home-link">UW.edu</a>
 
                 <div class="myuw-search-links">
                     <a href="/profile/"><i class="fa fa-user" aria-hidden="true"></i></a>
@@ -47,48 +47,50 @@
         <div class="myuw-navigation">
 
             <div class="myuw-wrapper">
-            <div class="myuw-logo">
-                <button id="menu_toggle"></i>
+                <div class="myuw-logo">
+                    <button id="menu_toggle"></i>
 
-                    <span class="fa-stack fa-md">
-                        <i class="fa fa-square-o fa-stack-2x"></i>
-                        <i class="fa fa-bars fa-stack-1x"></i>
-                    </span>
-                        {% if page.permalink == '/results/' or page.permalink == '/profile/' %}MyUW{% else %}{{ page.title }}{% endif %}
-                </button>
-            </div>
+                        <span class="fa-stack fa-md">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-bars fa-stack-1x"></i>
+                        </span>
+                            {% if page.permalink == '/results/' or page.permalink == '/profile/' %}MyUW{% else %}{{ page.title }}{% endif %}
+                    </button>
+                </div>
 
-            <ul id="menu_container" class="myuw-menu">
 
-                <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-
-                {% if user.uw_affiliation == 'student' %}
-                <li><a href="/academics/"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Academics</a></li>
-                <li><a href="/huskyexp/"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Husky Experience</a></li>
-                <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
-                <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
-                {% endif %}
-
-                {% if user.uw_affiliation == 'faculty' %}
-                <li><a href="/teaching/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Teaching</a></li>
-                <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
-                <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
-                {% endif %}
-
-                {% if user.uw_affiliation == 'staff' %}
-                <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
-                {% endif %}
-
-            </ul>
             </div>
 
         </div>
 
-        <div class="myuw-content">
+        <div class="myuw-body">
             <div class="myuw-wrapper">
-                <h1 class="visually-hidden">{{ page.title }}</h1>
 
-                {{ content }}
+                <ul id="menu_container" class="myuw-menu">
+
+                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+
+                    {% if user.uw_affiliation == 'student' %}
+                    <li><a href="/academics/"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Academics</a></li>
+                    <li><a href="/huskyexp/"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Husky Experience</a></li>
+                    <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
+                    {% endif %}
+
+                    {% if user.uw_affiliation == 'faculty' %}
+                    <li><a href="/teaching/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Teaching</a></li>
+                    <li><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
+                    {% endif %}
+
+                    {% if user.uw_affiliation == 'staff' %}
+                    <li><a href="/accounts/"><i class="fa fa-address-card" aria-hidden="true"></i> Accounts</a></li>
+                    {% endif %}
+                </ul>
+
+                <div class="myuw-content">
+                    {{ content }}
+                </div>
 
                 <div class="myuw-quicklinks">
                     <h2>Quicklinks</h2>
