@@ -9,7 +9,7 @@ $bar-height: 40px;
 /*** mixins ***/
 
 $tablet-width: 768px;
-$desktop-width: 992px;
+$desktop-width: 1024px;
 
 @mixin tablet {
     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -47,7 +47,7 @@ $desktop-width: 992px;
 body { background: #d9d9d9; }
 
 .myuw-wrapper {
-    @include desktop { max-width: 1200px; margin: 0 auto; position: relative; };
+    @include desktop { max-width: ($desktop-width - 30); margin: 0 auto; position: relative; };
 }
 
 .myuw-search {
@@ -125,7 +125,7 @@ body { background: #d9d9d9; }
             font-famaily: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
             text-decoration: none;
             color: #fff;
-            font-size: 23px;
+            font-size: 18px;
             //text-transform: uppercase;
             font-weight: 400;
             line-height: $nav-height;
@@ -183,6 +183,8 @@ body { background: #d9d9d9; }
         clear: both;
         visibility: hidden;
     }
+
+    h2 { margin-top: 0; color: $uw-purple; font-size: 18px; border-bottom: solid 1px #ddd; padding-bottom: 10px; font-weight: 400; }
 }
 
 .myuw-content { margin: 0;
@@ -190,14 +192,11 @@ body { background: #d9d9d9; }
     @include desktop { float: left; width: 53%; margin-left: 20px; };
 
     .myuw-card { padding: 20px; border-bottom: solid 1px #ddd; background: #fff;
-
         @include desktop { border: none; margin-bottom: 15px; };
     }
 }
 
-.myuw-quicklinks {
-
-    background: #fff; padding: 20px;
+.myuw-quicklinks { background: #fff; padding: 20px;
 
     @include desktop { float: right; width: 20%; };
 
