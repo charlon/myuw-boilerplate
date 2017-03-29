@@ -71,7 +71,7 @@ body { background: #fefefe; }
 }
 
 .myuw-wrapper { margin: 0 auto; padding: 0 20px;
-    @include desktop { position: relative; };
+    @include desktop { position: relative; max-width: 1200px };
 }
 
 
@@ -106,22 +106,25 @@ body { background: #fefefe; }
         background-size: 25px;
         background-position: left center;
         width: 26px;
+        text-indent: 33px;
         overflow: hidden;
         display: inline-block;
-        color: transparent;
         float: left;
+        color: #999;
+
+        @include desktop { min-width: 26px; width: auto; }
     }
 
     .myuw-search-links { display: inline-block; float: right; color: #fff; margin-right: -3px; font-size: 16px;
         a { display: inline-block; min-width: 30px; text-align: center;
             @include desktop {
-                span { font-size: 13px; margin-right: 8px; }
+                span { font-size: 13px; margin-right: 8px; color: #999; }
             }
         }
         button { color: #fff; text-decoration: none; padding: 0; min-width:30px; height: $bar-height; display: inline-block;
             background: none; border: none;
              @include desktop {
-                 span { font-size: 13px; margin-right: 8px; }
+                 span { font-size: 13px; margin-right: 8px; color: #999; }
              }
         }
     }
@@ -137,7 +140,7 @@ body { background: #fefefe; }
             float: left;
             display: inline-block;
             color: #fff;
-            font-size: 18px;
+            font-size: 26px;
             font-weight: 400;
             line-height: $nav-height;
             height: $nav-height;
