@@ -219,6 +219,7 @@ body { background: #fefefe; }
 
     @include desktop { margin-top: 15px;  }
 
+    h1 { font-size: 22px; color: #444; font-weight: 400; }
     h2 { margin-top: 0; color: $uw-purple; font-size: 16px; font-weight: 400; text-transform: uppercase; }
 }
 
