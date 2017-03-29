@@ -93,7 +93,7 @@ body { background: #fefefe; }
     line-height: $bar-height;
     height: $bar-height;
     font-size: 14px;
-    border-bottom: solid 1px #666;
+    border-bottom: solid 1px darken($uw-purple, 5%);
 
 
     a { color: #fff; display: inline-block; text-decoration: none;

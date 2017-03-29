@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My Profile
+title: Profile
 permalink: /profile/
 ---
 
