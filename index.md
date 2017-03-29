@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MyUW
+title: Home
 permalink: /
 ---
 
