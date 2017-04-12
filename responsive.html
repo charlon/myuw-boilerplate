@@ -32,8 +32,15 @@ permalink: /responsive/
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <script type="text/javascript" src="{{ "/assets/js/responsive.js" | relative_url }}"></script>
 
+    <script>
+    $(document).ready(function(){
+        var defaultURL = '{{ site.url }}';
+        loadPage('', defaultURL);
+    });
+    </script>
+
 </head>
-<body id="container">
+    
 	<div id="url" style="display:none;">
 		<form method="post">
 			<input type="text" placeholder="Test your own site... type the url and hit enter" />

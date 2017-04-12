@@ -1,4 +1,4 @@
-var defaultURL = 'http://curry.aca.uw.edu:4000/'; //<---- CHANGE TO YOUR WEBSITE URL
+//var defaultURL = 'http://curry.aca.uw.edu:4000/'; //<---- CHANGE TO YOUR WEBSITE URL
 
 //show loading graphic
 function showLoader(id) {
@@ -35,7 +35,7 @@ $('.frame').each(function(){showLoader($(this).attr('id'))});
 //when document loads
 $(document).ready(function(){
 
-  loadPage('', defaultURL);
+  //loadPage('', defaultURL);
 
   //query string
   var qsArray = window.location.href.split('?');
