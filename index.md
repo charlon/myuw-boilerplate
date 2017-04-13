@@ -6,6 +6,11 @@ permalink: /
 
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
+
+<div class="myuw-account">
+    account info here
+</div>
+
 {% if user.uw_notices %}
 <div class="myuw-card">
     <h2>Notices</h2>
