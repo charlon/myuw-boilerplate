@@ -34,12 +34,12 @@
 
         <div class="myuw-thin-bar">
             <div class="myuw-wrapper">
-                <a href="/" class="myuw-home-link">UW.edu</a>
+                <a href="/profile/"><i class="fa fa-user" aria-hidden="true"></i> <span>{{ user.uw_netid }}</span></a>
 
                 <div class="myuw-search-links">
-                    <a href="/profile/"><i class="fa fa-user" aria-hidden="true"></i> <span class="visually-hidden-mobile">{{ user.uw_netid }}</span></a>
-                    <button id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i> <span class="visually-hidden-mobile">Search</span></button>
-                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> <span>Email</span></a>
+
+                    <button id="search_toggle"><i class="fa fa-search" aria-hidden="true" style="font-size:14px;"></i> <span>Search</span></button>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> <span>UW Gmail</span></a>
                 </div>
             </div>
         </div>
@@ -58,8 +58,6 @@
                             {% if page.permalink == '/' %}MyUW{% else %}{{ page.title }}{% endif %}
                     </button>
                 </div>
-
-                <div class="myuw-notices">Notices.. sadkj lasdfkj</div>
             </div>
 
         </div>
