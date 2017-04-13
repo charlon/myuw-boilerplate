@@ -224,6 +224,10 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
     @include desktop { float: left; width: 51.5%; margin: 0 20px; };
 
+    .myuw-account { background: yellow; margin-left: -20px; margin-right: -20px; padding: 20px;
+        @include desktop { margin: 0; }
+    }
+
     .myuw-card { padding: 20px 0; border-bottom: solid 1px #ddd; background: #fff;
         @include desktop { border: none; margin-bottom: 15px; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
     }
