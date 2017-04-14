@@ -224,18 +224,24 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
     @include desktop { float: left; width: 51.5%; margin: 0 20px; };
 
-    .myuw-topper { margin-left: -20px; margin-right: -20px; font-size: 14px; border-top: solid 1px #ccc; background: #eee;
+    .myuw-card { padding: 20px 0; border-bottom: solid 1px #ddd; background: #fff;
+        @include desktop { border: none; margin-bottom: 15px; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
+    }
+
+    .myuw-topper { margin-left: -20px; margin-right: -20px; padding: 0; font-size: 12px;  border-bottom: solid 1px #eee;
 
         @include desktop { margin: 0 0 20px 0; }
 
-        a { text-decoration: none; color: #333; display:block; line-height: 35px;  border-bottom: solid 1px #ccc; }
+        a { text-decoration: none; color: #666; display:block; line-height: 35px;
+            span { font-weight: bold; font-size: 14px; color: #222; }
+        }
 
         .myuw-accounts {
 
             &:after { content: ""; display: table; clear: both; }
 
-            a { float: left; width: 50%; text-align: center;
-                &:first-child { border-right: solid 1px #ccc; width: 49.6%; }
+            a { float: left; width: 50%; text-align: center;  border-bottom: solid 1px #eee;
+                &:first-child { border-right: solid 1px #eee; width: 49.6%; }
             }
         }
 
@@ -243,9 +249,7 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
     }
 
-    .myuw-card { padding: 20px 0; border-bottom: solid 1px #ddd; background: #fff;
-        @include desktop { border: none; margin-bottom: 15px; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
-    }
+
 }
 
 .myuw-quicklinks { background: #fff; padding: 20px 0;
