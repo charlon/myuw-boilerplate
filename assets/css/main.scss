@@ -228,11 +228,11 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
         @include desktop { border: none; margin-bottom: 15px; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
     }
 
-    .myuw-topper { margin-left: -20px; margin-right: -20px; padding: 0; font-size: 12px;  border-bottom: solid 1px #eee;
+    .myuw-topper { margin-left: -20px; margin-right: -20px; font-size: 12px; padding: 10px;
 
-        @include desktop { margin: 0 0 20px 0; }
+        @include desktop { margin: 0 0 20px 0; padding: 0; }
 
-        a { text-decoration: none; color: #666; display:block; line-height: 35px;
+        a { text-decoration: none; color: #666; display:block; line-height: 35px; border: solid 1px #ddd; border-radius: 3px;
             span { font-weight: bold; font-size: 14px; color: #222; }
         }
 
@@ -240,12 +240,16 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
             &:after { content: ""; display: table; clear: both; }
 
-            a { float: left; width: 50%; text-align: center;  border-bottom: solid 1px #eee;
-                &:first-child { border-right: solid 1px #eee; width: 49.6%; }
+            a { width: 49%; text-align: center;
+
+                &:first-child { float: left; }
+                &:last-child { float: right; }
             }
         }
 
-        .myuw-week-counter { }
+        .myuw-week-counter {
+            a { margin-top: 10px; }
+        }
 
     }
 

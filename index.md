@@ -7,7 +7,7 @@ permalink: /
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
 
-<div class="myuw-card myuw-topper">
+<div class="myuw-topper">
     <div class="myuw-accounts">
         <a href="/accounts#husky_card">Husky Card <span>$12.43</span></a>
         <a href="/accounts#tuition_balance">Tuition <span>$12345.00</span></a>
