@@ -224,10 +224,11 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
     @include desktop { float: left; width: 51.5%; margin: 0 20px; };
 
-    .myuw-topper { margin-left: -20px; margin-right: -20px; font-size: 14px; border-top: solid 1px #ccc;
-        @include desktop { margin: 0; }
+    .myuw-topper { margin-left: -20px; margin-right: -20px; font-size: 14px; border-top: solid 1px #ccc; background: #eee;
 
-        a { text-decoration: none; color: #333; display:block; line-height: 35px; background: #eee; border-bottom: solid 1px #ccc; }
+        @include desktop { margin: 0 0 20px 0; }
+
+        a { text-decoration: none; color: #333; display:block; line-height: 35px;  border-bottom: solid 1px #ccc; }
 
         .myuw-accounts {
 
