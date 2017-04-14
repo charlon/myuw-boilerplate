@@ -9,8 +9,8 @@ permalink: /
 
 <div class="myuw-topper">
     <div class="myuw-accounts">
-        <a href="/accounts#husky_card">Husky Card <span>$12.43</span></a>
-        <a href="/accounts#tuition_balance">Tuition <span>$12345.00</span></a>
+        <a href="/accounts/">Husky Card <span>$12.43</span></a>
+        <a href="/accounts/">Tuition <span>$12345.00</span></a>
     </div>
     <div class="myuw-week-counter" style="text-align:center;"><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Spring 2017 <span>Week 3</span></a></div>
 </div>
