@@ -224,8 +224,22 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
     @include desktop { float: left; width: 51.5%; margin: 0 20px; };
 
-    .myuw-account { background: yellow; margin-left: -20px; margin-right: -20px; padding: 20px;
+    .myuw-topper { margin-left: -20px; margin-right: -20px; font-size: 14px; border-top: solid 1px #ccc;
         @include desktop { margin: 0; }
+
+        a { text-decoration: none; color: #333; display:block; line-height: 35px; background: #eee; border-bottom: solid 1px #ccc; }
+
+        .myuw-accounts {
+
+            &:after { content: ""; display: table; clear: both; }
+
+            a { float: left; width: 50%; text-align: center;
+                &:first-child { border-right: solid 1px #ccc; width: 49.6%; }
+            }
+        }
+
+        .myuw-week-counter { }
+
     }
 
     .myuw-card { padding: 20px 0; border-bottom: solid 1px #ddd; background: #fff;

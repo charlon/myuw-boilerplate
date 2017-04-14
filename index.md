@@ -7,8 +7,12 @@ permalink: /
 {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
 
-<div class="myuw-account">
-    account info here
+<div class="myuw-topper">
+    <div class="myuw-accounts">
+        <a href="/accounts#husky_card">Husky Card $12.43</a>
+        <a href="/accounts#tuition_balance">Tuition $12345.00</a>
+    </div>
+    <div class="myuw-week-counter" style="text-align:center;"><a href="/calendar/"><i class="fa fa-calendar" aria-hidden="true"></i> Spring 2017. Week 3</a></div>
 </div>
 
 {% if user.uw_notices %}
