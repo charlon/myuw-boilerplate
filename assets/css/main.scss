@@ -236,14 +236,11 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
             span { font-weight: bold; font-size: 14px; color: #222; }
         }
 
-        .myuw-accounts {
+        .myuw-accounts { display: flex;
 
-            &:after { content: ""; display: table; clear: both; }
-
-            a { width: 49%; text-align: center;
-
-                &:first-child { float: left; }
-                &:last-child { float: right; }
+            a { flex: 1;  text-align: center;
+                &:first-child { margin-right: 5px; }
+                &:last-child { margin-left: 5px; }
             }
         }
 
