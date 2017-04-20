@@ -128,7 +128,7 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
     }
 }
 
-.myuw-navigation { background: $uw-purple;
+.myuw-navigation { background: $uw-purple; height: $nav-height;
 
     .myuw-wrapper {
         background-image: url("/assets/img/uw-logo-white-min.png");
@@ -196,12 +196,12 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
 }
 
-.myuw-menu {  margin: 0 -10px; background: #fff; max-height: 0; overflow: hidden; font-size: 14px;
+.myuw-menu {  margin: 1px -10px; background: #fff; max-height: 0; overflow: hidden; font-size: 14px;
 
     @include desktop { max-height: 1000px; margin: 0; overflow: visible; float: left; width: 20%; background: transparent; }
 
     ul { background: #e1e1e1; margin: 10px 0 0 0; padding: 0; list-style: none; border-radius: 3px;
-        @include desktop { background: none; }
+        @include desktop { background: none; margin: 0; }
     }
 
     li { line-height: 30px; padding: 0; margin-left: 15px; font-weight: bold; text-transform: uppercase;
