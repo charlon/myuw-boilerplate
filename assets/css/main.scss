@@ -69,10 +69,33 @@ $large-desktop-width: 1280px;
     transition: max-height 0.5s ease-in-out;
 }
 
+
+/*** myuw flexbox layout ***/
+
+.myuw-body {
+
+    .myuw-wrapper {
+
+        @include desktop {
+
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content:flex-start;
+            align-items:stretch;
+
+            .myuw-menu { order:1; flex-basis:200px; height:100%; }
+            .myuw-content { order:2; flex:1; height:100%; margin: 0 20px; }
+            .myuw-quicklinks { order:3; flex-basis:200px; height:100%; }
+        }
+
+    }
+
+}
+
 /*** myuw ***/
 
 body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif; }
-
 
 .myuw-search, .myuw-thin-bar, .myuw-navigation, .myuw-body, .myuw-footer {
 
@@ -198,18 +221,16 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
 .myuw-menu {  margin: 1px -10px; background: #fff; max-height: 0; overflow: hidden; font-size: 14px;
 
-    @include desktop { max-height: 1000px; margin: 0; overflow: visible; float: left; width: 20%; }
+    @include desktop { max-height: 1000px; margin: 0; overflow: visible; }
 
     ul { background: #e1e1e1; margin: 10px 0 0 0; padding: 0; list-style: none; border-radius: 3px;
-        @include desktop {  }
+        @include desktop { margin: 0; }
     }
 
     li { line-height: 30px; padding: 0; margin-left: 15px; font-weight: bold; text-transform: uppercase;
 
         &:first-child { padding-top: 10px; }
         &:last-child { padding-bottom: 10px; }
-
-        //@include desktop { margin: 0 !important; }
 
         a { text-decoration: none; color: #000;
 
@@ -233,8 +254,6 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 }
 
 .myuw-content { margin: 0;
-
-    @include desktop { float: left; width: 51.5%; margin: 0 20px; };
 
     .myuw-card { padding: 20px 0; border-bottom: solid 1px #ddd; background: #fff;
         @include desktop { border: none; margin-bottom: 15px; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
@@ -265,10 +284,6 @@ body { background: #fefefe; padding: 0; margin: 0; font-family: "Open Sans",Helv
 
 }
 
-.myuw-quicklinks { background: #fff; padding: 20px 0;
-
-    @include desktop { float: right; width: 20%; padding: 20px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1); };
-
-}
+.myuw-quicklinks { background: #fff; }
 
 .myuw-footer { padding: 0 20px; line-height: $bar-height; font-size: 14px; color: #999; }
