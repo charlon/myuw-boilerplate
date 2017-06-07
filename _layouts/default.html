@@ -12,14 +12,40 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+
+
         <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
         <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" />
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js" />
+
         <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+
 
     </head>
     <body>
+
+
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#myModal').modal('show');
+            });
+        </script>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header" style="border:none !important; padding:0 !important;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin:10px;">×</button>
+        </div>
+          <div class="modal-body" style="padding:30px !important;">
+            <p style="font-size:18px;">SpaceScout has grown into a new app, <a href="https://scout.uw.edu">Scout</a>!</p>
+            <p>Now you can search for places to eat on campus and technology you can use, in addition to study spaces.</p>
+            <p><strong>SpaceScout will be retired on June 23, 2017.</strong></p>
+          </div>
+        </div>
 
         {% assign user = site.data.profiles.[site.uw_logged_in] %}
 
